@@ -4,28 +4,11 @@
 
 class Millis {
   public:
-    Millis(unsigned us = 0) {
-      if (us != 0) {
-        setTime(us);
-      }
-    }
-    ~Millis() {}
-    setTime(unsigned long us) {
-      reset(millis());
-      this->us = us;
-    }
-    reset(unsigned long us = 0) {
-      if (us != 0) {
-        start = us;
-      } else {
-        start = millis();
-      }
-    }
-    bool check() {
-      now = millis();
-      elapsed = now - start;
-      return (elapsed >= us);
-    }
+    Millis(unsigned long us = 0);
+    ~Millis();
+    void setTime(unsigned long us);
+    void reset(unsigned long us = 0);
+    bool check();
   private:
     unsigned long now, elapsed;
     unsigned long start;
