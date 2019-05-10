@@ -1,0 +1,17 @@
+###########################################
+# Syntax Coloring Map For ArduinoHelperLibary
+###########################################
+
+###########################################
+# Datatypes (KEYWORD1)
+###########################################
+
+Micros	KEYWORD1
+Key KEYWORD1
+###########################################
+# Methods and Functions (KEYWORD2)
+###########################################
+
+setTime	KEYWORD2
+reset	KEYWORD2
+isPressed	KEYWORD2
