@@ -10,16 +10,12 @@ Micros::Micros(unsigned long  us) {
 Micros::~Micros() {}
 
 void Micros::setTime(unsigned long  us) {
-  reset(micros());
+  start = micros();
   this->us = us;
 }
 
-void Micros::reset(unsigned long  us) {
-  if (us != 0) {
-    start = us;
-  } else {
-    start = micros();
-  }
+void Micros::reset() {
+  start = micros();
 }
 
 bool Micros::check() {

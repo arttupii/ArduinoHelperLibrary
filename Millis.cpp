@@ -10,16 +10,12 @@ Millis::Millis(unsigned long us = 0) {
 Millis::~Millis() {}
 
 void Millis::setTime(unsigned long us) {
-  reset(millis());
+  start = millis();
   this->us = us;
 }
 
-void Millis::reset(unsigned long us = 0) {
-  if (us != 0) {
-    start = us;
-  } else {
-    start = millis();
-  }
+void Millis::reset() {
+  start = millis();
 }
 
 bool Millis::check() {

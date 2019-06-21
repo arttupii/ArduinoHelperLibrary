@@ -6,7 +6,7 @@ class Micros {
   public:
     Micros(unsigned long us=0);
     ~Micros();
-    void reset(unsigned long us=0);
+    void reset();
     void setTime(unsigned long us);
     bool check();
   private:

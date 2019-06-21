@@ -7,7 +7,7 @@ class Millis {
     Millis(unsigned long us = 0);
     ~Millis();
     void setTime(unsigned long us);
-    void reset(unsigned long us = 0);
+    void reset();
     bool check();
   private:
     unsigned long now, elapsed;
