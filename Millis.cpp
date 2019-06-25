@@ -1,4 +1,4 @@
-#include "millis.h"
+#include "Millis.h"
 #include <Arduino.h>
 
 Millis::Millis(unsigned long us = 0) {
